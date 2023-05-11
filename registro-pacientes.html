@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Pacientes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CENTRO MEDICO CONSUMERS</h1>
+    </header>
+    <main>
+        <form id="registro-pacientes-form">
+            <h2>REGISTRO DE PACIENTES</h2>
+            <label for="nombre_paciente">Nombre:<span> *</span></label>
+            <input type="text" id="nombre_paciente" name="nombre_paciente" required>
+
+            <label for="apellido_paciente">Apellido:<span> *</span></label>
+            <input type="text" id="apellido_paciente" name="apellido_paciente" required>   
+            
+            <label for="tdoc_paciente">Tipo de Documento:<span> *</span></label>
+            <select id="tdoc_paciente" name="tdoc_paciente">
+                <option value="">------------------------  Seleccione el tipo  ---------------------</option>
+                <option value="CC">Cédula de Ciudadanía</option>
+                <option value="TI">Tarjeta de Identidad</option>
+                <option value="RC">Registro Civil</option>
+                <option value="Otro">Otro</option>
+            </select>
+            
+            <label for="documento_paciente">Documento:<span> *</span></label>
+            <input type="text" id="documento_paciente" name="documento_paciente" required>
+
+            <label for="edad_paciente">Edad:<span> *</span></label>
+            <input type="number" id="edad_paciente" name="edad_paciente" required>
+
+            <label for="telefono_paciente">Telefono:<span> *</span></label>
+            <input type="tel" id="telefono_paciente" name="telefono_paciente" required>
+
+            <label for="especialidad_paciente">Especialidad Requerida:<span> *</span></label>
+            <select id="especialidad_paciente" name="especialidad_paciente">
+                <option value="">------------------------  Seleccione la especialidad  ---------------------</option>
+                <option value="Medicina General">Medicina General</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="Medicina Interna">Medicina Interna</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Rehabilitación Física">Rehabilitación Física</option>
+                <option value="Psicología">Psicología</option>
+                <option value="Odontología">Odontología</option>
+                <option value="Radiología">Radiología</option>
+            </select>
+            <input type="submit" value="Enviar">
+            
+        </form>
+        <div class="boton-container">
+            <input type="button" id="botonVolver" value="Volver">
+        </div>
+    </main>
+    <script src="volver.js"></script>
+    <script src="registro-pacientes.js"></script>
+</body>
+
+</html>
