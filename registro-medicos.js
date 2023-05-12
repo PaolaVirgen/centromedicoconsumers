@@ -20,7 +20,7 @@ formularioRegistro.addEventListener("submit", function(event){
     }
     let medicos = []
     let localMedicos = localStorage.getItem("medicos")
-   
+    console.log (localMedicos);
     if (localMedicos){
         medicos = JSON.parse(localMedicos)
     }
